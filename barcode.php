@@ -2,11 +2,11 @@
 /*
 
  * Image-Creator / Sample
- * Part of PHP-Barcode 0.3pl1
+ * Part of PHP-Barcode 0.4
  
  * (C) 2001,2002,2003,2004 by Folke Ashberg <folke@ashberg.de>
  
- * The newest version can be found at http://www.ashberg.de/bar
+ * The newest version can be found at http://www.ashberg.de/php-barcode
  
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -39,7 +39,8 @@ if (get_magic_quotes_gpc()){
     $code=getvar('code');
 }
 if (!$code) $code='123456789012';
-barcode_print($code,getvar('encoding'),getvar('scale'),getvar('mode'), getvar('checksum'));
+
+barcode_print($code,getvar('encoding'),getvar('scale'),getvar('mode'));
 
 /*
  * call
